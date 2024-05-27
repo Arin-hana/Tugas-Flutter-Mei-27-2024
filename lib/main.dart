@@ -106,10 +106,6 @@ class _DisplayDataState extends State<DisplayData> {
           IconButton(
             icon: const Icon(Icons.refresh),
             onPressed: () async {
-              await Navigator.push(
-                context,
-                MaterialPageRoute(builder: (context) => const CreateData()),
-              );
               refresh();
             },
           ),
